@@ -1,1 +1,1 @@
-require("./array/drop");
+require("./array/dropWhile");
