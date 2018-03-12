@@ -1,4 +1,4 @@
 const _ = require("lodash");
 
-/* ["tom"] */
+/* [ "tom" ] */
 console.log(_.compact(["tom", false, 0, "", null, undefined, NaN]));
