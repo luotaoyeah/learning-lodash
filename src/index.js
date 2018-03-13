@@ -1,1 +1,1 @@
-require("./array/findLastIndex");
+require("./array/head");
