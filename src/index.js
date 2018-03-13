@@ -1,1 +1,1 @@
-require("./array/head");
+require("./array/flattenDepth");
