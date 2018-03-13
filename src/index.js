@@ -1,1 +1,1 @@
-require("./array/flattenDepth");
+require("./array/fromPairs");
