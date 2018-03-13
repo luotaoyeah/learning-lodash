@@ -1,1 +1,1 @@
-require("./array/fromPairs");
+require("./array/indexOf");
