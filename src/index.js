@@ -1,1 +1,1 @@
-require("./array/intersection");
+require("./array/intersectionBy");
