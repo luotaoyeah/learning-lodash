@@ -1,1 +1,1 @@
-require("./array/initial");
+require("./array/intersection");
