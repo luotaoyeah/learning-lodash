@@ -1,1 +1,1 @@
-require("./array/indexOf");
+require("./array/initial");
