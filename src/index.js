@@ -1,1 +1,1 @@
-require("./array/pullAllWith");
+require("./array/sortedLastIndexOf");
