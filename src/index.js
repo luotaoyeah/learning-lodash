@@ -1,1 +1,1 @@
-require("./array/nth");
+require("./array/pullAllWith");
