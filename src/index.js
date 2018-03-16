@@ -1,1 +1,1 @@
-require("./array/intersectionWith");
+require("./array/nth");
