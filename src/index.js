@@ -1,1 +1,1 @@
-require("./array/sortedLastIndexOf");
+require("./array/zipObjectDeep");
