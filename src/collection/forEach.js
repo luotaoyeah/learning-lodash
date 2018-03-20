@@ -5,11 +5,20 @@ const array = [1, 2, 3, 4, 5];
 /*
  * 传递给回调函数 3 个参数：'当前元素'，'当前索引'，'数组本身'
  */
-_.forEach(array, (value, index, collection) => {
+const result = _.forEach(array, (value, index, collection) => {
   console.log("value:", value);
   console.log("index:", index);
   console.log("collection:", collection);
 });
+
+console.log("--------------------------------");
+
+/*
+ * 返回结果是该数组
+ */
+console.log("result:", result);
+
+console.log("--------------------------------");
 
 /*
  * 在回调函数中 return false，会终止迭代
