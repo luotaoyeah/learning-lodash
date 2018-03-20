@@ -1,1 +1,1 @@
-require("./date/now");
+require("./collection/forEach");
