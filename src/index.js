@@ -1,1 +1,1 @@
-require("./collection/every");
+require("./collection/filter");
