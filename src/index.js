@@ -1,1 +1,1 @@
-require("./collection/filter");
+require("./object/property");
