@@ -3,7 +3,7 @@ const _ = require("lodash");
 const array = [1, 2, 3, 4, 5];
 
 /*
- * 传递给回调函数 3 个参数：'当前元素'，'当前索引'，'数组本身'
+ * 传递给回调函数 3 个参数：'当前元素'，'当前索引'，'列表'
  */
 const result = _.forEach(array, (value, index, collection) => {
   console.log("value:", value);

@@ -1,1 +1,1 @@
-require("./collection/forEachRight");
+require("./collection/every");
