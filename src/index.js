@@ -1,1 +1,1 @@
-require("./object/property");
+require("./object/get");
