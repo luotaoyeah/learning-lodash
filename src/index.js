@@ -1,1 +1,1 @@
-require("./lang/isString");
+require("./string/trim");
