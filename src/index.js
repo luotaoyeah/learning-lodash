@@ -1,1 +1,1 @@
-require("./object/create");
+require("./object/has");
