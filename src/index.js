@@ -1,1 +1,1 @@
-require("./object/has");
+require("./lang/isString");
