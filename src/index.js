@@ -1,1 +1,1 @@
-require("./collection/map");
+require("./object/merge");
