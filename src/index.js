@@ -1,1 +1,1 @@
-require("./object/merge");
+require("./object/assignInWith");
