@@ -1,1 +1,1 @@
-require("./string/trim");
+require("./collection/map");
