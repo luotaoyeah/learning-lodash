@@ -1,1 +1,1 @@
-require("./lang/isNaN");
+require("./string/startsWith");
