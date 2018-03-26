@@ -1,1 +1,1 @@
-require("./lang/isNil");
+require("./lang/isNaN");
