@@ -1,1 +1,1 @@
-require("./object/assignInWith");
+require("./lang/isNull");
