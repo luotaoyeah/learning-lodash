@@ -1,1 +1,1 @@
-require("./lang/isArray");
+require("./lang/isNumber");
