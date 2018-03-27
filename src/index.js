@@ -1,1 +1,1 @@
-require("./lang/cloneDeep");
+require("./lang/cloneWith");
