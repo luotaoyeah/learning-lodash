@@ -1,1 +1,1 @@
-require("./lang/cloneDeepWith");
+require("./lang/isArray");
