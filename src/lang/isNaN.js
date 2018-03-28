@@ -1,7 +1,7 @@
 const _ = require("lodash");
 
 /*
- * 检查值是否是 NaN
+ * 检查给定值是否是 NaN；
  */
 
 /* true */

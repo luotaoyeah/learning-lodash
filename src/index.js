@@ -1,1 +1,1 @@
-require("./lang/isNumber");
+require("./collection/forEach");
