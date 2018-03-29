@@ -1,1 +1,1 @@
-require("./lang/isError");
+require("./lang/isFunction");
