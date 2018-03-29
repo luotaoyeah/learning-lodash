@@ -1,1 +1,1 @@
-require("./lang/isEqual");
+require("./lang/isEqualWith");
