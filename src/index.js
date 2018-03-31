@@ -1,1 +1,1 @@
-require("./lang/lte");
+require("./lang/toArray");
