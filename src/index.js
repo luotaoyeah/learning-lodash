@@ -1,1 +1,1 @@
-require("./lang/isFunction");
+require("./lang/isInteger");
