@@ -1,1 +1,1 @@
-require("./lang/isMatch");
+require("./util/matches");
