@@ -1,1 +1,1 @@
-require("./lang/toArray");
+require("./lang/toString");
