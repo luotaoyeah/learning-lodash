@@ -1,1 +1,1 @@
-require("./lang/isMatchWith");
+require("./lang/isObject");
