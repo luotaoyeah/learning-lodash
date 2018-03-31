@@ -1,1 +1,1 @@
-require("./lang/isObject");
+require("./lang/isObjectLike");
