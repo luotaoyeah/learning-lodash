@@ -1,1 +1,1 @@
-require("./lang/isInteger");
+require("./lang/isMatch");
