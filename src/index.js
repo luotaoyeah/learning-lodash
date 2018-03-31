@@ -1,1 +1,1 @@
-require("./lang/isSymbol");
+require("./lang/lte");
