@@ -1,6 +1,7 @@
 const _ = require("lodash");
 
 /*
+ * 参考：http://benalman.com/projects/jquery-throttle-debounce-plugin/
  * 接收 3 个参数：'执行函数'，'延迟时间'，'配置选项'；
  * 生成一个'去抖函数'（对'执行函数'的包装），延迟执行'执行函数'直到上一次执行'执行函数'已经过去了'延迟时间'毫秒；
  * --------------------------------------------------
@@ -82,7 +83,7 @@ const f07 = _.debounce(x => {
 }, 1000);
 const f08 = _.debounce(
   x => {
-    console.log("f09:", x);
+    console.log("f08:", x);
   },
   1000,
   { leading: true, trailing: false }
