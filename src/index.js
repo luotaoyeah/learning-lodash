@@ -1,1 +1,1 @@
-require("./lang/toString");
+require("./function/debounce");
