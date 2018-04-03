@@ -1,1 +1,1 @@
-require("./4.17.5/util/flowRight");
+require("./4.17.5/util/matchesProperty");
