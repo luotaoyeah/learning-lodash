@@ -11,7 +11,7 @@ const _ = require("lodash");
  * 默认配置：{leading: true, trailing: true}
  * --------------------------------------------------
  */
-console.log("----------: 基本使用");
+console.log("----------: 基本用法");
 const f01 = x => {
   console.log("f01:", x);
 };
@@ -32,7 +32,7 @@ for (let i = 1; i <= 3; i++) {
  * 默认配置：{leading: true, trailing: true}
  * --------------------------------------------------
  */
-console.log("----------: 基本使用");
+console.log("----------: 基本用法");
 const f03 = _.throttle(
   x => {
     console.log("f03:", x);

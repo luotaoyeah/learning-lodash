@@ -1,1 +1,1 @@
-require("./4.17.5/function/debounce");
+require("./4.17.5/function/delay");
