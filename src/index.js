@@ -1,1 +1,1 @@
-require("./4.17.5/collection/some");
+require("./4.17.5/util/times");
