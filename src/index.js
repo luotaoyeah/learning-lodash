@@ -1,1 +1,1 @@
-require("./4.17.5/util/overEvery");
+require("./4.17.5/collection/some");
