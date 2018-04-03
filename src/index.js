@@ -1,1 +1,1 @@
-require("./4.17.5/util/flow");
+require("./4.17.5/util/flowRight");
