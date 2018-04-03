@@ -2,7 +2,7 @@ const _ = require("lodash");
 
 /*
  * 接收 2 个参数：'对象'，'属性路径'；
- * 检查'对象'是否存在'属性路径'（非继承属性）；
+ * 检查'对象'是否存在'属性路径'（包括继承属性）；
  * --------------------------------------------------
  */
 
@@ -12,8 +12,6 @@ const other = _.create(object, {
 });
 
 /* true */
-console.log(_.has(object, "a.b"));
-/* false */
-console.log(_.has(other, "a.b"));
-/* tom */
-console.log(other.a.b);
+console.log(_.hasIn(object, "a.b"));
+/* true */
+console.log(_.hasIn(other, "a.b"));

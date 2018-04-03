@@ -46,9 +46,19 @@ _.forEach(array01, item => {
 });
 console.log("----------");
 
-_.forEach(array01, (value, index, collection) => {
+_.forEach(array01, (value, index) => {
   delete array01[index];
 });
 /* [null,null,null,null,null] */
 console.log(JSON.stringify(array01));
 console.log("----------");
+
+/*
+ * 可以迭代对象的属性；
+ * --------------------------------------------------
+ */
+console.log("----------: object");
+const obj01 = { x: 1, y: 2 };
+_.forEach(obj01, (value, key) => {
+  console.log(key, ":", value);
+});
