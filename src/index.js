@@ -1,1 +1,1 @@
-require("./4.17.5/util/attempt");
+require("./4.17.5/util/constant");
