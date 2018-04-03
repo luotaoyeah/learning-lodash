@@ -1,1 +1,1 @@
-require("./4.17.5/object/mapValues");
+require("./4.17.5/object/mapKeys");
