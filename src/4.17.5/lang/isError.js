@@ -1,7 +1,8 @@
 const _ = require("lodash");
 
 /*
- * 检查给定值是否是 Error 对象；
+ * 接收 1 个参数：'检查对象'；
+ * 判断'检查对象'是否是 Error 对象；
  * Error，EvalError，RangeError，ReferenceError，SyntaxError，TypeError，URIError；
  * --------------------------------------------------
  */
