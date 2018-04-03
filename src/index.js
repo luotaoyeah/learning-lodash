@@ -1,1 +1,1 @@
-require("./4.17.5/object/propertyOf");
+require("./4.17.5/util/overEvery");
