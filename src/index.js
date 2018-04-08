@@ -1,1 +1,1 @@
-require("./4.17.5/string/lowerCase");
+require("./4.17.5/string/upperCase");
