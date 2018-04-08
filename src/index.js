@@ -1,1 +1,1 @@
-require("./4.17.5/object/pick");
+require("./4.17.5/string/upperFirst");
