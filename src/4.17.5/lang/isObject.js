@@ -19,16 +19,23 @@ console.log(_.isObject(null));
 console.log(_.isObject(Number.NaN));
 
 /*
- * 对于原始对象类型（包括日期，正则表达式，function，string 包装类型，number 包装类型，boolean 包装类型）返回 true；
+ * 对于原始类型的包装类型（string，number，boolean），返回 true；
+ * --------------------------------------------------
+ */
+console.log("----------: primitive wrappers");
+console.log(_.isObject(new String("tom")));
+console.log(_.isObject(new Number(18)));
+console.log(_.isObject(new Boolean(true)));
+
+/*
+ * 对于原生对象类型（包括数组（Array），日期（Date），正则表达式（RegExp），函数（Function）），返回 true；
  * --------------------------------------------------
  */
 console.log("----------: object types");
 console.log(_.isObject([]));
 console.log(_.isObject({}));
 console.log(_.isObject(() => {}));
+console.log(_.isObject(new Array()));
 console.log(_.isObject(new Date()));
 console.log(_.isObject(new RegExp(/abc/)));
 console.log(_.isObject(new Function()));
-console.log(_.isObject(new String("tom")));
-console.log(_.isObject(new Boolean(true)));
-console.log(_.isObject(new Number(true)));

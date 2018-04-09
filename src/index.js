@@ -1,1 +1,1 @@
-require("./4.17.5/string/startCase");
+require("./4.17.5/lang/isObject");
