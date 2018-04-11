@@ -12,9 +12,7 @@ const _ = require("lodash");
 /* true */
 console.log(_.isEmpty(true));
 /* true */
-console.log(_.isEmpty(0));
-/* true */
-console.log(_.isEmpty(""));
+console.log(_.isEmpty(18));
 /* true */
 console.log(_.isEmpty(NaN));
 /* true */

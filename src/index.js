@@ -1,1 +1,1 @@
-require("./4.17.5/collection/sortBy");
+require("./4.17.5/lang/isEmpty");
