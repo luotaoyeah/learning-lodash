@@ -1,1 +1,1 @@
-require("./4.17.5/array/flatten");
+require("./4.17.5/array/flattenDeep");
