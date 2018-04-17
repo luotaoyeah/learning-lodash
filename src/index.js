@@ -1,1 +1,1 @@
-require("./4.17.5/collection/includes");
+require("./4.17.5/array/flatten");
