@@ -7,12 +7,10 @@ const _ = require("lodash");
  */
 
 /*
- * '迭代函数'的第 1 个参数为上一次'迭代函数'的返回；
- * '迭代函数'第一次运行时，没有上一次的返回，所以其第 1 个参数为'累加器'；
- * 如果没有指定'累加器'，则'迭代函数'第一次运行时，直接返回第一个元素；
+ * '迭代函数'的第一个参数为上一次'迭代函数'的返回结果；
+ * 如果没有指定'初始值'，则'初始值'为'集合'的第一个元素，且从'集合'第二个元素开始迭代；
  * --------------------------------------------------
  */
-console.log("----------: 基本用法");
 /* 6 */
 console.log(
   _.reduce(
@@ -23,17 +21,21 @@ console.log(
     0
   )
 );
+console.log("----------: 无初始值");
 /* 3-2-1 */
 console.log(
-  _.reduce([3, 2, 1], (accumulator, value) => {
+  _.reduce([3, 2, 1], (accumulator, value, index) => {
+    console.log("index:", index);
     return `${accumulator}-${value}`;
   })
 );
+console.log("----------: 有初始值");
 /* 0-3-2-1 */
 console.log(
   _.reduce(
     [3, 2, 1],
-    (accumulator, value) => {
+    (accumulator, value, index) => {
+      console.log("index:", index);
       return accumulator + "-" + value;
     },
     0
