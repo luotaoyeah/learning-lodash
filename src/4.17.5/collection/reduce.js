@@ -26,7 +26,7 @@ console.log(
 /* 3-2-1 */
 console.log(
   _.reduce([3, 2, 1], (accumulator, value) => {
-    return accumulator + "-" + value;
+    return `${accumulator}-${value}`;
   })
 );
 /* 0-3-2-1 */
