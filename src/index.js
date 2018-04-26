@@ -1,1 +1,1 @@
-require("./doc/object/merge");
+require("./doc/util/uniqueId");
