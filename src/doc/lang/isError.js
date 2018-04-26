@@ -8,10 +8,9 @@ const _ = require("lodash");
  */
 
 /*
- * 如果回调函数返回 undefined，则忽略比较规则，由方法自己进行比较；
  * --------------------------------------------------
  */
-console.log("----------: isError");
+console.log("----------: 基本用法");
 
 /* true */
 console.log(_.isError(new Error()));

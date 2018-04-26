@@ -1,1 +1,1 @@
-require("./4.17.5/collection/reduce");
+require("./doc/collection/reduce");
