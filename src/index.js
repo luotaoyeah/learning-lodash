@@ -1,1 +1,1 @@
-require("./doc/collection/reduce");
+require("./doc/object/merge");

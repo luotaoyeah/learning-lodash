@@ -12,57 +12,61 @@ const _ = require("lodash");
  */
 console.log("----------: '目标对象'会被修改");
 const foo = { x: 1 };
-const bar = { y: 2 };
-const result01 = _.merge(foo, bar, { z: 3 });
-/* { x: 1, y: 2, z: 3 } */
+_.merge(foo, { y: 2 });
+/* { x: 1, y: 2 } */
 console.log(foo);
-/* true */
-console.log(result01 === foo);
-/* { y: 2 } */
-console.log(bar);
 
 /*
- * 可以合并数组元素；
+ * 返回结果就是'目标对象'；
  * --------------------------------------------------
  */
+console.log("----------: 返回结果就是'目标对象'");
+const foo01 = { x: 1 };
+/* true */
+console.log(foo01 === _.merge(foo01, { y: 2 }));
+
+/*
+ * 可以合并数组；
+ * --------------------------------------------------
+ */
+console.log("----------: 可以合并数组");
 /* [ 'a', 'b', 3 ] */
 console.log(_.merge([1, 2, 3], ["a", "b"]));
-console.log("----------");
 
 /*
- * 如果源对象（第2到n个参数）的属性值为 undefined，且目标对象（第1个参数）存在该属性，则该属性会被跳过；
+ * 如果'来源对象'的属性值为 undefined，
+ * 且'目标对象'中存在该属性，则该属性会被忽略；
  * --------------------------------------------------
  */
+console.log("----------: 忽略 undefined");
 /* { x: 3, y: undefined } */
 console.log(_.merge({ x: 1 }, { x: 3, y: undefined }));
 /* { x: 3, y: null } */
 console.log(_.merge({ x: 1, y: null }, { x: 3, y: undefined }));
-console.log("----------");
 
 /*
- * 对于同名属性，后面对象的属性值会覆盖前面对象的属性值；
+ * 对于同名属性，
+ * 后面对象的属性值会覆盖前面对象的属性值；
  * --------------------------------------------------
  */
+console.log("----------: 覆盖同名属性");
 /* { x: 3 } */
 console.log(_.merge({ x: 1 }, { x: 2 }, { x: 3 }));
-console.log("----------");
 
 /*
- * 从原型继承的属性也会被合并到目标对象；
+ * 继承属性也会被合并；
  * 先合并自身属性，再合并继承属性；
  * --------------------------------------------------
  */
+console.log("----------: 合并继承属性");
 /* { z: 3, x: 1, y: 2 } */
 console.log(_.merge({}, _.create({ x: 1, y: 2 }, { z: 3 })));
-console.log("----------");
 
 /*
- * 合并的时候是进行值传递，而不是引用传递；
+ * 合并时复制的是属性的值，而不是引用（与 _.assign() 的区别）；
  * --------------------------------------------------
  */
+console.log("----------: 复制值而非引用");
 const foo02 = { x: { name: "tom" } };
-const bar02 = { y: { age: 18 } };
-const result02 = _.merge({}, foo02, bar02);
-result02.x = { name: "cat" };
-/* { x: { name: 'tom' } } */
-console.log(foo02);
+console.log(foo02.x === _.merge({}, foo02, { y: 2 }).x);
+console.log(foo02.x === _.assign({}, foo02, { y: 2 }).x);
