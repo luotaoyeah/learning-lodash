@@ -1,1 +1,1 @@
-require("./doc/util/uniqueId");
+require("./doc/function/once");
