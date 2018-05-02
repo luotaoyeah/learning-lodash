@@ -1,1 +1,1 @@
-require("./doc/function/once");
+require("./doc/collection/reduce");
