@@ -1,1 +1,1 @@
-require("./doc/collection/reduce");
+require("./doc/util/attempt");
