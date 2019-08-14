@@ -7,7 +7,7 @@ const _ = require("lodash");
  */
 
 console.log("\n-------------------------------------------------- 01");
-const f01 = x => {
+const f01 = (x: number) => {
   if (x > 10) {
     throw new Error("x > 10");
   }

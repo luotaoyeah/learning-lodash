@@ -1,1 +1,1 @@
-import "./doc/util/attempt";
+import "./doc/util/attempt/attempt";
