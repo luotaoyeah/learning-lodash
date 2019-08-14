@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "description": "@luotao/learning-lodash",
   "scripts": {
-    "dev": "rimraf ./dist && webpack && node ./dist/index.js",
-    "dev:node": "rimraf ./dist && webpack --target node && node ./dist/index.js",
-    "dev:node:debug": "rimraf ./dist && webpack --target node && node %NODE_OPTIONS% ./dist/index.js",
     "build": "rimraf ./dist && webpack --mode production",
     "build:node": "rimraf ./dist && webpack --target node --mode production",
-    "lint:ts": "tslint \"src/**/*.ts\""
+    "dev": "rimraf ./dist && webpack && node ./dist/index.js",
+    "codecov": "codecov --token=e226d2e7-132a-454d-b706-ab8e6a8a143f",
+    "dev:node": "rimraf ./dist && webpack --target node && node ./dist/index.js",
+    "dev:node:debug": "rimraf ./dist && webpack --target node && node %NODE_OPTIONS% ./dist/index.js",
+    "lint:ts": "tslint \"src/**/*.ts\"",
+    "test": "jest --coverage"
   },
   "dependencies": {
     "jest": "^24.9.0",
@@ -18,6 +20,7 @@
     "@types/jest": "^24.0.17",
     "@types/lodash": "^4.14.137",
     "@types/node": "^12.7.2",
+    "codecov": "^3.5.0",
     "husky": "^3.0.3",
     "lint-staged": "^9.2.1",
     "prettier": "^1.18.2",

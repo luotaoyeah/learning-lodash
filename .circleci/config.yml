@@ -1,0 +1,48 @@
+version: 2.1
+
+jobs:
+  build-learning-lodash:
+    working_directory: ~/learning-lodash
+    docker:
+      - image: circleci/node:12-browsers
+    steps:
+      - checkout
+      - restore_cache:
+          key: learning-lodash-{{ .Branch }}-{{ checksum "package-lock.json" }}
+      - run: npm install
+      - save_cache:
+          key: learning-lodash-{{ .Branch }}-{{ checksum "package-lock.json" }}
+          paths:
+            - "node_modules"
+      - run:
+          name: build
+          command: npm run build
+
+  test-learning-lodash:
+    working_directory: ~/learning-lodash
+    docker:
+      - image: circleci/node:12-browsers
+    steps:
+      - checkout
+      - restore_cache:
+          key: learning-lodash-{{ .Branch }}-{{ checksum "package-lock.json" }}
+      - run: npm install
+      - save_cache:
+          key: learning-lodash-{{ .Branch }}-{{ checksum "package-lock.json" }}
+          paths:
+            - "node_modules"
+      - run:
+          name: unit test
+          command: npm run test
+      - run:
+          name: codecov
+          command: npm run codecov
+
+workflows:
+  version: 2
+  learning-lodash-workflow:
+    jobs:
+      - build-learning-lodash
+      - test-learning-lodash:
+          requires:
+            - build-learning-lodash
