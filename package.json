@@ -1,37 +1,35 @@
 {
   "name": "@luotao/learning-lodash",
   "version": "0.1.0",
-  "description": "@luotao/learning-lodash",
   "scripts": {
-    "build": "rimraf ./dist && webpack --mode production",
-    "build:node": "rimraf ./dist && webpack --target node --mode production",
-    "dev": "rimraf ./dist && webpack && node ./dist/index.js",
+    "build:prod": "webpack",
     "codecov": "codecov --token=e226d2e7-132a-454d-b706-ab8e6a8a143f",
-    "dev:node": "rimraf ./dist && webpack --target node && node ./dist/index.js",
-    "dev:node:debug": "rimraf ./dist && webpack --target node && node %NODE_OPTIONS% ./dist/index.js",
-    "lint:ts": "tslint \"src/**/*.ts\"",
+    "eslint": "eslint src/**/*.js src/**/*.ts",
     "test": "jest --coverage"
   },
   "dependencies": {
-    "jest": "^24.9.0",
-    "lodash": "^4.17.15"
+    "jest": "^26.6.3",
+    "lodash": "^4.17.20"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.17",
-    "@types/lodash": "^4.14.137",
-    "@types/node": "^12.7.2",
+    "@types/jest": "^26.0.16",
+    "@types/lodash": "^4.14.165",
+    "@types/node": "^14.14.10",
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "clean-webpack-plugin": "^3.0.0",
     "codecov": "^3.5.0",
-    "husky": "^3.0.3",
-    "lint-staged": "^9.2.1",
-    "prettier": "^1.18.2",
-    "rimraf": "^3.0.0",
-    "ts-jest": "^24.0.2",
-    "ts-loader": "^6.0.4",
-    "tslint": "^5.18.0",
-    "tslint-config-prettier": "^1.18.0",
-    "tslint-loader": "^3.5.4",
-    "typescript": "^3.5.3",
-    "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.6"
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prefer-arrow": "^1.2.2",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.2",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.4.4",
+    "ts-loader": "^8.0.11",
+    "typescript": "^4.1.2",
+    "webpack": "^5.9.0",
+    "webpack-cli": "^4.2.0"
   }
 }
