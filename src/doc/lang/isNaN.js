@@ -1,4 +1,5 @@
-const _ = require("lodash");
+/* eslint-disable no-new-wrappers */
+const _ = require('lodash');
 
 /*
  * 接收 1 个参数：'检查的值'；
@@ -14,7 +15,7 @@ console.log(_.isNaN(Number.NaN));
 console.log(_.isNaN(new Number(NaN)));
 /* false */
 console.log(_.isNaN(null));
-console.log("----------");
+console.log('----------');
 
 /*
  * 全局作用域下的 isNaN 方法对于 undefined 和 非数字，返回结果为 true；
@@ -26,6 +27,6 @@ console.log(_.isNaN(undefined));
 /* true */
 console.log(isNaN(undefined));
 /* false */
-console.log(_.isNaN("tom"));
+console.log(_.isNaN('tom'));
 /* true */
-console.log(isNaN("tom"));
+console.log(isNaN('tom'));

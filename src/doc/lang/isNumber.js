@@ -1,4 +1,4 @@
-const _ = require("lodash");
+const _ = require('lodash');
 
 /*
  * 判断'检查的值'是否是数字原始类型，或者数字包装类型（对象）；
@@ -7,6 +7,7 @@ const _ = require("lodash");
 /* true */
 console.log(_.isNumber(0));
 /* true */
+// eslint-disable-next-line no-new-wrappers
 console.log(_.isNumber(new Number()));
 /* true */
 console.log(_.isNumber(Number.NaN));
@@ -23,4 +24,4 @@ console.log(_.isNumber(Infinity));
 /* true */
 console.log(_.isNumber(-Infinity));
 /* false */
-console.log(_.isNumber("0"));
+console.log(_.isNumber('0'));

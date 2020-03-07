@@ -1,4 +1,5 @@
-const _ = require("lodash");
+/* eslint-disable no-new-wrappers */
+const _ = require('lodash');
 
 /*
  * 检查给定值是否是布尔值（原始类型，包装类型）；
