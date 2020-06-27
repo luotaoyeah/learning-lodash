@@ -1,10 +1,5 @@
 <component name="ProjectCodeStyleConfiguration">
   <code_scheme name="Project" version="173">
-    <option name="HTML_ATTRIBUTE_WRAP" value="2" />
-    <option name="HTML_ELEMENTS_TO_INSERT_NEW_LINE_BEFORE" value="div,p,form,h1,h2,h3" />
-    <option name="HTML_ELEMENTS_TO_REMOVE_NEW_LINE_BEFORE" value="" />
-    <option name="HTML_DO_NOT_INDENT_CHILDREN_OF" value="" />
-    <option name="HTML_KEEP_WHITESPACES_INSIDE" value="pre,textarea" />
     <CssCodeStyleSettings>
       <option name="HEX_COLOR_UPPER_CASE" value="true" />
       <option name="HEX_COLOR_LONG_FORMAT" value="true" />
