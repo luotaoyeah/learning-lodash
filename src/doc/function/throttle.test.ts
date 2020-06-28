@@ -17,9 +17,7 @@ describe('src/doc/function/throttle.test.ts', () => {
    * 需要注意地点: 在第一个计时周期的 trailing 执行的 f01(1) 会立即触发一个新的计时周期.
    */
   it('01', (cb) => {
-    const f01 = jest.fn((value) => {
-      console.log(value);
-    });
+    const f01 = jest.fn();
     const f02 = throttle(f01, 1000, { leading: true, trailing: true });
 
     for (let i = 0; i <= 10; i++) {
