@@ -1,33 +1,25 @@
 {
-  "name": "@luotao/learning-lodash",
-  "version": "0.1.0",
-  "scripts": {
-    "build:prod": "webpack",
-    "codecov": "codecov --token=e226d2e7-132a-454d-b706-ab8e6a8a143f",
-    "test": "jest --coverage"
-  },
-  "dependencies": {
-    "jest": "27.3.1",
-    "lodash": "4.17.21"
-  },
-  "devDependencies": {
-    "@types/jest": "27.0.2",
-    "@types/lodash": "4.14.175",
-    "@types/node": "16.11.1",
-    "clean-webpack-plugin": "4.0.0",
-    "codecov": "3.8.3",
-    "husky": "4.3.8",
-    "lint-staged": "11.2.3",
-    "prettier": "2.4.1",
-    "ts-jest": "27.0.7",
-    "ts-loader": "9.2.6",
-    "typescript": "4.4.4",
-    "webpack": "5.59.0",
-    "webpack-cli": "4.9.1"
-  },
-  "prettier": {
-    "printWidth": 160,
-    "singleQuote": true,
-    "trailingComma": "all"
-  }
+    "name": "@luotao/learning-lodash",
+    "version": "0.1.0",
+    "scripts": {
+        "test": "jest --coverage"
+    },
+    "dependencies": {
+        "jest": "28.1.1",
+        "lodash": "4.17.21"
+    },
+    "devDependencies": {
+        "@types/jest": "28.1.2",
+        "@types/lodash": "4.14.182",
+        "@types/node": "16.11.41",
+        "prettier": "2.7.1",
+        "ts-jest": "28.0.5",
+        "typescript": "4.7.4"
+    },
+    "prettier": {
+        "printWidth": 160,
+        "singleQuote": true,
+        "trailingComma": "all",
+        "tabWidth": 4
+    }
 }
